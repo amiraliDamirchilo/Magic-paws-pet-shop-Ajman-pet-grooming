@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Magic Paws | Pet Shop, Grooming &amp; Boarding in Ajman</title>
+<meta name="description" content="Magic Paws, Al Rashidiya, Ajman. Dog and cat grooming, bathing, nail care, ear cleaning, boarding and a pet shop. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Concept: bath time. Warm cream, bubble-gum pink, a deep plum ink, and a squishy 3D paw you can boop. */
+:root{--cream:#FFF6EC;--pink:#FF7EB6;--plum:#2D1B3D;--lav:#E9DDFB;--sun:#FFC94D;--mint:#BDF0DC;--mute:#6B5B78;--line:rgba(45,27,61,.12);--display:'Fredoka',system-ui,sans-serif;--body:'Nunito',system-ui,sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--plum);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit}p{max-width:58ch}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:17px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px) rotate(-1deg)}
+.btn svg{width:20px;height:20px}
+.btn-p{background:var(--plum);color:#fff;box-shadow:0 6px 0 var(--pink)}
+.btn-o{background:#fff;box-shadow:inset 0 0 0 2px var(--plum)}
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,246,236,.9);backdrop-filter:blur(10px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font-family:var(--display);font-weight:700;font-size:24px;text-decoration:none}
+.logo span{color:var(--pink)}
+.menu{display:flex;gap:26px;font-weight:700;font-size:15px}.menu a{text-decoration:none;color:var(--mute)}
+.nav .btn{padding:11px 18px;font-size:15px;box-shadow:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding-block:clamp(40px,6vw,90px)}
+.hero-copy{min-width:0}
+.chip{display:inline-block;background:var(--lav);border-radius:999px;padding:7px 14px;font-weight:800;font-size:14px}
+.hero h1{font-size:clamp(46px,6.6vw,94px);margin:20px 0}
+.hero h1 .hl{background:var(--sun);padding:0 .15em;border-radius:.3em;display:inline-block;transform:rotate(-2deg)}
+.hero .lead{font-size:clamp(17px,1.5vw,20px);color:var(--mute);margin-bottom:30px;max-width:40ch}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.stage{position:relative;aspect-ratio:1/1;min-width:0;background:radial-gradient(closest-side,var(--lav),transparent);border-radius:50%}
+#paw{position:absolute;inset:0;width:100%;height:100%;cursor:pointer}
+.stage .hint{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);font-weight:800;font-size:14px;color:var(--mute);white-space:nowrap}
+.marq{background:var(--plum);color:#fff;overflow:hidden;white-space:nowrap;font-family:var(--display);font-size:22px;padding:14px 0}
+.marq div{display:inline-block;animation:m 26s linear infinite}
+.marq span{margin:0 22px}.marq b{color:var(--pink)}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding-block:clamp(70px,9vw,120px)}
+.h2r{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:end;margin-bottom:clamp(30px,4vw,50px)}
+.h2r h2{font-size:clamp(36px,5vw,66px)}.h2r p{color:var(--mute)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.s{border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;min-width:0;transition:transform .3s var(--ease)}
+.s:hover{transform:translateY(-5px) rotate(-.5deg)}
+.s .e{font-size:40px;line-height:1}
+.s h3{font-size:28px}.s p{font-size:16px;color:var(--mute)}
+.s .go{margin-top:auto;font-weight:800}
+.s1{background:var(--lav)}.s2{background:var(--mint)}.s3{background:#FFE0EE}.s4{background:#FFEFC6}.s5{background:#fff;border:2px solid var(--line)}.s6{background:var(--plum);color:#fff}.s6 p{color:#CDBEDB}
+.cmp{background:#fff}
+.cmp .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.cmp h2{font-size:clamp(36px,5vw,62px);margin-bottom:16px}.cmp p{color:var(--mute)}
+.list{display:grid;gap:12px;margin-top:24px}
+.list div{display:flex;gap:14px;align-items:flex-start;background:var(--cream);border-radius:18px;padding:16px 18px}
+.list b{font-family:var(--display);color:var(--pink);font-size:22px;line-height:1}
+.board{background:var(--plum);color:#fff;border-radius:32px;padding:clamp(28px,4vw,44px);min-width:0}
+.board h3{font-size:34px;margin-bottom:10px}.board p{color:#CDBEDB}
+.board ul{list-style:none;margin:20px 0;display:grid;gap:10px}
+.board li::before{content:"🐾 "}
+.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start}
+.book h2{font-size:clamp(36px,5vw,62px);margin-bottom:20px}
+.r{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.r span{font-weight:800;color:var(--pink)}
+form{background:#fff;border-radius:28px;padding:clamp(22px,4vw,36px);display:grid;grid-template-columns:1fr 1fr;gap:12px;box-shadow:0 20px 50px -20px rgba(45,27,61,.25);min-width:0}
+form h3{grid-column:1/-1;font-size:28px}
+label{display:grid;gap:6px;font-weight:800;font-size:14px;color:var(--mute)}
+input,select{font:inherit;font-size:16px;padding:13px 14px;border-radius:14px;border:2px solid var(--line);background:var(--cream);width:100%;color:var(--plum)}
+input:focus,select:focus{outline:none;border-color:var(--pink)}
+form .btn{grid-column:1/-1;justify-content:center}
+footer{background:var(--plum);color:#CDBEDB;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:24px}
+.dock{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;transform:translateY(160%);transition:transform .5s var(--ease)}
+.dock.show{transform:none}
+@media (max-width:980px){.menu{display:none}.hero .wrap,.h2r,.cmp .wrap,.book .wrap{grid-template-columns:1fr}.stage{max-width:440px;width:100%;margin:0 auto}.svc{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.svc,form{grid-template-columns:1fr}.r{grid-template-columns:1fr;gap:2px}.nav .btn span{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.5 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol></svg>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top">Magic<span>Paws</span></a>
+  <nav class="menu" aria-label="Main"><a href="#services">Grooming</a><a href="#boarding">Boarding</a><a href="#book">Book</a></nav>
+  <a class="btn btn-p wa" data-msg="Hi Magic Paws! I'd like to book a grooming appointment." href="#"><svg><use href="#wa"/></svg><span>Book on WhatsApp</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="chip">🐶 🐱 Al Rashidiya, Ajman</span>
+      <h1>Muddy in. <span class="hl">Fluffy</span> out.</h1>
+      <p class="lead">Grooming, bathing and boarding for dogs and cats, plus a pet shop for everything they need. Gentle hands, and patience.</p>
+      <div class="ctas">
+        <a class="btn btn-p wa" data-msg="Hi Magic Paws! I'd like to book a grooming appointment." href="#"><svg><use href="#wa"/></svg>Book a groom</a>
+        <a class="btn btn-o" href="#services">See services</a>
+      </div>
+    </div>
+    <div class="stage"><canvas id="paw" aria-label="A squishy 3D paw. Tap to boop it."></canvas><span class="hint">Boop the paw 🐾</span></div>
+  </div>
+</section>
+<div class="marq" aria-hidden="true"><div><span>Bath</span><b>✦</b><span>Haircut</span><b>✦</b><span>Nails</span><b>✦</b><span>Ears</span><b>✦</b><span>Coat care</span><b>✦</b><span>Boarding</span><b>✦</b><span>Pet shop</span><b>✦</b><span>Bath</span><b>✦</b><span>Haircut</span><b>✦</b><span>Nails</span><b>✦</b><span>Ears</span><b>✦</b><span>Coat care</span><b>✦</b><span>Boarding</span><b>✦</b><span>Pet shop</span><b>✦</b></div></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="h2r"><h2>The full spa day, for them.</h2><p>Every groom is done at your pet's pace. Nervous first-timers are welcome.</p></div>
+    <div class="svc">
+      <a class="s s1 wa" data-msg="Hi Magic Paws, I'd like to book a bath." href="#"><span class="e">🛁</span><h3>Bath &amp; blow-dry</h3><p>A deep clean with pet-safe shampoo, then a fluffy dry.</p><span class="go">Book a bath →</span></a>
+      <a class="s s2 wa" data-msg="Hi Magic Paws, I'd like a haircut and styling." href="#"><span class="e">✂️</span><h3>Haircut &amp; styling</h3><p>A tidy trim or a full breed cut, kept cool for UAE summers.</p><span class="go">Book a cut →</span></a>
+      <a class="s s3 wa" data-msg="Hi Magic Paws, I'd like nail care." href="#"><span class="e">💅</span><h3>Nail care</h3><p>Trimmed short and smooth, no more clicking on the floor.</p><span class="go">Book nails →</span></a>
+      <a class="s s4 wa" data-msg="Hi Magic Paws, I'd like ear cleaning." href="#"><span class="e">👂</span><h3>Ear cleaning</h3><p>Gentle cleaning that helps keep infections away.</p><span class="go">Book ears →</span></a>
+      <a class="s s5 wa" data-msg="Hi Magic Paws, I'd like a coat treatment." href="#"><span class="e">✨</span><h3>Coat treatments</h3><p>De-shedding and conditioning for a soft, healthy coat.</p><span class="go">Ask about it →</span></a>
+      <a class="s s6 wa" data-msg="Hi Magic Paws, I'm looking for something from your pet shop." href="#"><span class="e">🛍️</span><h3>Pet shop</h3><p>Food, treats, toys and care products. Ask us what's in stock.</p><span class="go">Ask what's in stock →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="cmp" id="boarding">
+  <div class="wrap">
+    <div>
+      <h2>Travelling? They stay with friends.</h2>
+      <p>Cat and dog boarding in Ajman, so your holiday doesn't come with worry.</p>
+      <div class="list">
+        <div><b>1</b><span>Message us your dates and your pet's routine.</span></div>
+        <div><b>2</b><span>Drop them off with their favourite toy.</span></div>
+        <div><b>3</b><span>Pick up a happy, clean pet. Add a groom before you collect.</span></div>
+      </div>
+    </div>
+    <div class="board">
+      <h3>Cat &amp; dog boarding</h3>
+      <p>Book early for Eid and school holidays. Spaces fill up fast.</p>
+      <ul><li>Dogs and cats welcome</li><li>Feeding on their usual routine</li><li>Optional bath before pick-up</li></ul>
+      <a class="btn wa" style="background:var(--pink);color:var(--plum)" data-msg="Hi Magic Paws, I'd like to book boarding." href="#"><svg><use href="#wa"/></svg>Check boarding dates</a>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book their next pamper.</h2>
+      <div class="r"><span>Where</span><div>Al Rashidiya 3, Ajman</div></div>
+      <div class="r"><span>For</span><div>Dogs and cats, all sizes</div></div>
+      <div class="r"><span>Booking</span><div>WhatsApp, we reply fast</div></div>
+      <a class="btn btn-o" style="margin-top:24px" href="https://www.google.com/maps/search/?api=1&query=Magic+Paws+pet+shop+Ajman" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <form id="bk">
+      <h3>Request a slot</h3>
+      <label for="bP">Pet<select id="bP"><option>Dog</option><option>Cat</option></select></label>
+      <label for="bS">Service<select id="bS"><option>Full groom</option><option>Bath &amp; blow-dry</option><option>Nails &amp; ears</option><option>Boarding</option></select></label>
+      <label for="bN">Pet's name<input id="bN" type="text"></label>
+      <label for="bD">Preferred day<input id="bD" type="date"></label>
+      <button class="btn btn-p" type="submit"><svg><use href="#wa"/></svg>Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 Magic Paws Pet Shop · Ajman</span><span>Grooming · Boarding · Pet shop</span></div></footer>
+<div class="dock" id="dock"><a class="btn btn-p wa" data-msg="Hi Magic Paws! I'd like to book a grooming appointment." href="#"><svg><use href="#wa"/></svg>Book a groom</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var PHONE='971500000000'; // TODO: real WhatsApp number
+  function url(m){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(m)}
+  document.querySelectorAll('.wa').forEach(function(a){a.href=url(a.dataset.msg);a.target='_blank';a.rel='noopener'});
+  var dock=document.getElementById('dock');addEventListener('scroll',function(){dock.classList.toggle('show',scrollY>innerHeight*.8)},{passive:true});
+  var d=document.getElementById('bD');d.value=new Date().toISOString().slice(0,10);d.min=d.value;
+  document.getElementById('bk').addEventListener('submit',function(e){e.preventDefault();var v=function(i){return document.getElementById(i).value||'-'};
+    window.open(url('Hi Magic Paws, I\'d like to book.\nPet: '+v('bP')+' ('+v('bN')+')\nService: '+v('bS')+'\nDay: '+v('bD')),'_blank','noopener')});
+
+  if(!window.THREE)return;
+  var canvas=document.getElementById('paw'),stage=canvas.parentElement;
+  try{
+    var R=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    R.setPixelRatio(Math.min(devicePixelRatio,2));R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;
+    var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(30,1,.1,100);C.position.set(0,0,11);
+    function col(h){return new THREE.Color(h).convertSRGBToLinear()}
+    var env=new THREE.Scene();env.add(new THREE.Mesh(new THREE.BoxGeometry(30,30,30),new THREE.MeshBasicMaterial({color:col(0xE9DDFB),side:THREE.BackSide})));
+    function panel(w,h,x,y,z,c,i){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:col(c).multiplyScalar(i),side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
+    panel(12,3,0,8,4,0xffffff,2.2);panel(3,10,-9,0,3,0xFFC94D,1.4);panel(3,10,9,0,3,0xFF7EB6,1.4);
+    var pm=new THREE.PMREMGenerator(R);S.environment=pm.fromScene(env,.03).texture;
+    var key=new THREE.DirectionalLight(0xffffff,.8);key.position.set(3,5,6);S.add(key);
+    var pad=new THREE.MeshPhysicalMaterial({color:col(0xFF7EB6),roughness:.35,clearcoat:.8,clearcoatRoughness:.2,sheen:1});
+    var paw=new THREE.Group();S.add(paw);
+    var main=new THREE.Mesh(new THREE.SphereGeometry(1.2,64,48),pad);main.scale.set(1.15,.95,.6);main.position.y=-.7;paw.add(main);
+    var toes=[];[[-1.35,.75],[-.5,1.45],[.5,1.45],[1.35,.75]].forEach(function(p){var t=new THREE.Mesh(new THREE.SphereGeometry(.52,48,32),pad);t.scale.set(.9,1.1,.6);t.position.set(p[0],p[1],0);t.userData.b=t.position.clone();paw.add(t);toes.push(t)});
+    // bubbles
+    var bm=new THREE.MeshPhysicalMaterial({color:0xffffff,roughness:0,transmission:.9,transparent:true,opacity:.55,clearcoat:1});
+    var bubbles=[];for(var i=0;i<14;i++){var b=new THREE.Mesh(new THREE.SphereGeometry(.12+Math.random()*.2,24,16),bm);b.position.set((Math.random()-.5)*6,(Math.random()-.5)*6,(Math.random()-.5)*2);b.userData.s=.005+Math.random()*.01;S.add(b);bubbles.push(b)}
+    function size(){var w=canvas.clientWidth,h=canvas.clientHeight;if(!w)return;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+    size();addEventListener('resize',size);
+    var mx=0,my=0,boop=0,vel=0;
+    addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+    canvas.addEventListener('click',function(){vel-=.35});
+    var visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,t0=performance.now();
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(stage);
+    (function loop(t){requestAnimationFrame(loop);if(!visible)return;var tt=(t-t0)/1000;
+      vel+=(-boop)*.18;vel*=.82;boop+=vel; // spring squish
+      var sq=1+boop;paw.scale.set(1/Math.sqrt(Math.max(sq,.3)),Math.max(sq,.3),1);
+      toes.forEach(function(o,i){o.position.y=o.userData.b.y+(reduce?0:Math.sin(tt*2+i)*.05)});
+      bubbles.forEach(function(b){if(!reduce)b.position.y+=b.userData.s;if(b.position.y>3.5)b.position.y=-3.5});
+      paw.rotation.y=(reduce?0:Math.sin(tt*.7)*.35)+mx*.8;paw.rotation.x=-.2+my*.5;paw.rotation.z=reduce?0:Math.sin(tt*.5)*.08;
+      R.render(S,C)})(t0);
+  }catch(err){console.warn(err)}
+})();
+</script>
+</body>
+</html>
